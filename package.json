@@ -2,10 +2,12 @@
   "name": "genai-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts"
+    "prestart": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +15,11 @@
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
     "@langchain/core": "^1.0.1",
-    "@langchain/google-genai": "^1.0.0",
+    "@langchain/openai": "^1.0.0",
     "dotenv": "^17.2.3",
     "langchain": "^1.0.1",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.12"
   }
 }
