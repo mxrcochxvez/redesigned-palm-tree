@@ -14,12 +14,19 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
+    "@huggingface/inference": "^4.11.3",
+    "@langchain/community": "^1.0.0",
     "@langchain/core": "^1.0.1",
     "@langchain/openai": "^1.0.0",
+    "@tavily/core": "^0.5.12",
     "dotenv": "^17.2.3",
+    "duck-duck-scrape": "^2.2.7",
     "langchain": "^1.0.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
     "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
